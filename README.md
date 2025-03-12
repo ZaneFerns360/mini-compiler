@@ -1,5 +1,4 @@
 # Mini Compiler using LLVM
-
 ## Description
 This project is a simple compiler that performs floating-point arithmetic operations on only two operands (`x` and `y`) using any operators. It also handles syntax errors and reports them accordingly.
 
@@ -18,10 +17,11 @@ This project is a simple compiler that performs floating-point arithmetic operat
 
 ## Compilation Instructions
 To compile the project, run:
-
 ```sh
 clang++ compiler.cpp `llvm-config --cxxflags --ldflags --libs core orcjit native` -std=c++17
 ```
+
+![Compilation Process](main-output.png)
 
 ```sh
 ./a.out // or ./a.exe for windows
@@ -31,3 +31,12 @@ clang++ compiler.cpp `llvm-config --cxxflags --ldflags --libs core orcjit native
 ```sh
 llvm-objdump -d -r output.o
 ```
+
+![Assembly Output](Assembly-code.png)
+
+## Team Members
+1. Jefin John - 9904
+2. Zane Fernandes - 9894
+3. Preetham Fernandes - 9892
+4. Andronicus Lall - 9911
+5. Hardik Murudi - 9921
